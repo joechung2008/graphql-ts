@@ -1,0 +1,25 @@
+{
+  "author": "Joe Chung",
+  "dependencies": {
+    "nexus": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "esbuild": "^0.25.9",
+    "esbuild-node-externals": "^1.18.0",
+    "typescript": "^5.9.2"
+  },
+  "license": "MIt",
+  "main": "./dist/index.js",
+  "name": "@graphql-ts/lib",
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "build": "pnpm run build:script && pnpm run build:types",
+    "build:script": "node ./build.mjs",
+    "build:types": "tsc --project tsconfig.types.json",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

@@ -1,0 +1,27 @@
+{
+  "author": "Joe Chung",
+  "dependencies": {
+    "@graphql-ts/lib": "workspace:*",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "graphql-http": "^1.22.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^20.19.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "@graphql-ts/api",
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

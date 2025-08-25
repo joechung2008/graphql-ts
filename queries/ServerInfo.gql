@@ -1,0 +1,13 @@
+query GetDiagnostics($environment: String! = "https://hosting.portal.azure.net/api/diagnostics") {
+  diagnostics(environment: $environment) {
+    serverInfo {
+      hostname
+      serverId
+      deploymentId
+      extensionSync {
+        totalSyncAllCount
+        lastChangedTime
+      }
+    }
+  }
+}

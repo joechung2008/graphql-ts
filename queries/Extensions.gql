@@ -1,0 +1,20 @@
+query GetDiagnostics($environment: String! = "https://hosting.portal.azure.net/api/diagnostics") {
+  diagnostics(environment: $environment) {
+    extensions {
+      key
+      value {
+        extensionName
+        managedSdpEnabled
+        config {
+          key
+          value
+        }
+        stageDefinition
+        {
+          key
+          value
+        }
+      }
+    }
+  }
+}

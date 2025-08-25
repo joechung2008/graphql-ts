@@ -1,0 +1,9 @@
+query GetDiagnostics($environment: String! = "https://hosting.portal.azure.net/api/diagnostics") {
+  diagnostics(environment: $environment) {
+    clusterInfo {
+      webWorkerCount
+      isStartup
+      lastChangedTime
+    }
+  }
+}
