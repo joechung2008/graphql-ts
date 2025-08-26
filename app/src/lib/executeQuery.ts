@@ -1,8 +1,18 @@
-export async function executeQuery() {
+const defaultQuery = `
+query GetDiagnostics($environment: String! = "https://hosting.portal.azure.net/api/diagnostics") {
+  diagnostics(environment: $environment) {
+    armExtensions {
+      RpServerVersion
+      lastChangedTime
+    }
+  }
+}
+`;
+
+export async function executeQuery(query = defaultQuery) {
   const response = await fetch("http://localhost:3000/graphql", {
     body: JSON.stringify({
-      query:
-        'query GetDiagnostics($environment: String! = "https://hosting.portal.azure.net/api/diagnostics") { diagnostics(environment: $environment) { armExtensions { RpServerVersion lastChangedTime } buildInfo { buildVersion } clusterInfo { webWorkerCount isStartup lastChangedTime } extensions { key value { extensionName managedSdpEnabled config { key value } stageDefinition { key value } } } serverInfo { hostname serverId deploymentId extensionSync { totalSyncAllCount lastChangedTime } } } }',
+      query,
     }),
     headers: {
       "Content-Type": "application/json",
