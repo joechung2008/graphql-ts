@@ -34,11 +34,11 @@ export default function Home() {
 
   return (
     <div className="box-border flex flex-col h-screen p-4">
-      <Navbar className="pb-2" maxWidth="full" position="static">
-        <NavbarBrand>
-          <GraphQlIcon className="w-24 h-8" aria-label="GraphQL logo" />
-        </NavbarBrand>
-        <NavbarContent justify="end">
+      <Navbar className="pb-2" position="static">
+        <NavbarContent className="flex w-full justify-between items-center">
+          <NavbarBrand>
+            <GraphQlIcon className="w-24 h-8" aria-label="GraphQL logo" />
+          </NavbarBrand>
           <NavbarItem className="flex">
             <Button aria-label="Run Query" onPress={handleRunQuery}>
               <PlayIcon className="cursor-pointer h-6 w-6" />
