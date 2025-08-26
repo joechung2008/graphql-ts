@@ -3,7 +3,6 @@
   "dependencies": {
     "@graphql-ts/lib": "workspace:*",
     "@heroicons/react": "^2.2.0",
-    "@heroui/react": "^2.8.2",
     "@monaco-editor/react": "^4.7.0",
     "framer-motion": "^12.23.12",
     "next": "15.5.0",

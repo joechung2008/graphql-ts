@@ -15,5 +15,8 @@
     "app",
     "cli",
     "lib"
-  ]
+  ],
+  "dependencies": {
+    "@heroui/react": "^2.8.2"
+  }
 }
