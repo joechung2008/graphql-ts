@@ -1,5 +1,5 @@
 export async function executeQuery(query: string) {
-	const response = await fetch("http://localhost:3000/graphql", {
+	const response = await fetch("/api/graphql", {
 		body: JSON.stringify({
 			query,
 		}),
