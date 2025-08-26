@@ -1,4 +1,4 @@
 export interface ExtensionSync {
-  totalSyncAllCount: number;
-  lastChangedTime: string;
+	totalSyncAllCount: number;
+	lastChangedTime: string;
 }

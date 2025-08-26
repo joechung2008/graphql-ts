@@ -1,5 +1,5 @@
 export interface ClusterInfo {
-  webWorkerCount: number;
-  isStartup: boolean;
-  lastChangedTime: string;
+	webWorkerCount: number;
+	isStartup: boolean;
+	lastChangedTime: string;
 }

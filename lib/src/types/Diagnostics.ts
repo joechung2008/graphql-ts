@@ -5,9 +5,9 @@ import type { Extension } from "./Extension";
 import type { ServerInfo } from "./ServerInfo";
 
 export interface Diagnostics {
-  buildInfo: BuildInfo;
-  extensions: Record<string, Extension>;
-  serverInfo: ServerInfo;
-  clusterInfo: ClusterInfo;
-  armExtensions: ArmExtensions;
+	buildInfo: BuildInfo;
+	extensions: Record<string, Extension>;
+	serverInfo: ServerInfo;
+	clusterInfo: ClusterInfo;
+	armExtensions: ArmExtensions;
 }

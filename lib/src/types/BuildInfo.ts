@@ -1,3 +1,3 @@
 export interface BuildInfo {
-  buildVersion: string;
+	buildVersion: string;
 }

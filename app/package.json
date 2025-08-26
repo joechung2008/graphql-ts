@@ -25,11 +25,13 @@
     "tailwindcss": "^4.1.12",
     "typescript": "^5"
   },
+  "license": "MIT",
   "name": "@graphql-ts/app",
   "private": true,
   "scripts": {
     "build": "next build --turbopack",
     "dev": "cross-env PORT=4000 next dev --turbopack",
+    "format": "biome check --write .",
     "lint": "eslint",
     "start": "cross-env PORT=4000 next start"
   },

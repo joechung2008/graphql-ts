@@ -1,11 +1,16 @@
 {
   "author": "Joe Chung",
+  "dependencies": {
+    "@heroui/react": "^2.8.2"
+  },
   "license": "MIT",
   "name": "graphql-ts",
   "packageManager": "pnpm@10.15.0",
   "private": true,
   "scripts": {
     "build": "pnpm -r run build",
+    "format": "pnpm -r run format",
+    "lint": "pnpm -r run lint",
     "test": "pnpm -r run test"
   },
   "type": "module",
@@ -16,7 +21,7 @@
     "cli",
     "lib"
   ],
-  "dependencies": {
-    "@heroui/react": "^2.8.2"
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.2"
   }
 }

@@ -1,8 +1,8 @@
 {
   "recommendations": [
     "apollographql.vscode-apollo",
+    "biomejs.biome",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
     "humao.rest-client"
   ]
 }

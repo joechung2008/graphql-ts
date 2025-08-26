@@ -9,18 +9,18 @@ app.use(cors());
 const port = process.env.PORT ?? 3000;
 
 app.all(
-  "/graphql",
-  createHandler({
-    schema,
-    context: async () => {
-      const diagnostics = await getDiagnostics(Environment.Public);
-      return {
-        diagnostics,
-      };
-    },
-  })
+	"/graphql",
+	createHandler({
+		schema,
+		context: async () => {
+			const diagnostics = await getDiagnostics(Environment.Public);
+			return {
+				diagnostics,
+			};
+		},
+	}),
 );
 
 app.listen(port, () => {
-  console.log(`Express server listening on port ${port}`);
+	console.log(`Express server listening on port ${port}`);
 });

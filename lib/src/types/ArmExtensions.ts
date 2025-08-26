@@ -1,4 +1,4 @@
 export interface ArmExtensions {
-  RpServerVersion: string;
-  lastChangedTime: string;
+	RpServerVersion: string;
+	lastChangedTime: string;
 }
