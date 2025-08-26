@@ -1,6 +1,6 @@
 "use client";
 
-import GraphQlIcon from "@/components/GraphQlIcon";
+import { GraphQlIcon } from "@/components/GraphQlIcon";
 import { QueryEditor } from "@/components/QueryEditor";
 import { QueryResponse } from "@/components/QueryResponse";
 import { executeQuery } from "@/lib/executeQuery";
