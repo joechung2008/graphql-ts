@@ -12,7 +12,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@graphql-ts/lib",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10",
   "scripts": {
     "build": "pnpm run build:script && pnpm run build:types",
     "build:script": "node ./build.mjs",
