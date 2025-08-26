@@ -1,11 +1,14 @@
-import MonacoEditor from "@monaco-editor/react";
-import React from "react";
+import dynamic from "next/dynamic";
 
 interface QueryEditorProps {
   value: string;
   onChange: (value: string) => void;
   height?: string;
 }
+
+const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
+  ssr: false,
+});
 
 export function QueryEditor({
   value,

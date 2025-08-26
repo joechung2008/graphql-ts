@@ -33,7 +33,7 @@ export default function Home() {
   }, [query]);
 
   return (
-    <div className="flex flex-col h-screen p-4">
+    <div className="box-border flex flex-col h-screen p-4">
       <Navbar className="pb-2 w-full" position="static">
         <NavbarBrand>
           <GraphQlIcon className="w-24 h-8" aria-label="GraphQL logo" />
@@ -46,7 +46,7 @@ export default function Home() {
           </NavbarItem>
         </NavbarContent>
       </Navbar>
-      <div className="flex flex-row gap-2 items-start h-full">
+      <div className="flex flex-row gap-2 h-[100%] items-start">
         <div className="flex-1 h-full">
           <QueryEditor value={query} onChange={setQuery} />
         </div>

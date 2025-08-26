@@ -1,14 +1,29 @@
-import { Suspense } from "react";
-import { HighlightedCode } from "./HighlightedCode";
+import dynamic from "next/dynamic";
 
 interface QueryResponseProps {
   response: string;
 }
 
+const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
+  ssr: false,
+});
+
 export function QueryResponse({ response }: QueryResponseProps) {
   return (
-    <Suspense>
-      <HighlightedCode className="h-full" code={response} lang="json" />
-    </Suspense>
+    <MonacoEditor
+      defaultLanguage="json"
+      height="100%"
+      language="json"
+      theme="vs-dark"
+      value={response}
+      options={{
+        automaticLayout: true,
+        fontSize: 16,
+        minimap: { enabled: false },
+        readOnly: true,
+        scrollBeyondLastLine: false,
+        wordWrap: "on",
+      }}
+    />
   );
 }
