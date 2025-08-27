@@ -5,8 +5,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.18.0",
-    "esbuild": "^0.25.9",
-    "esbuild-node-externals": "^1.18.0",
+    "tsup": "^7.3.0",
     "typescript": "^5.9.2"
   },
   "license": "MIT",
@@ -14,9 +13,7 @@
   "name": "@graphql-ts/lib",
   "packageManager": "pnpm@10.15.0",
   "scripts": {
-    "build": "pnpm run build:script && pnpm run build:types",
-    "build:script": "node ./build.mjs",
-    "build:types": "tsc --project tsconfig.types.json",
+    "build": "tsup",
     "format": "biome check --write .",
     "lint": "biome check .",
     "start": "node ./dist/index.js",
