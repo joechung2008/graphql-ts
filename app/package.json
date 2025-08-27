@@ -29,10 +29,10 @@
   "private": true,
   "scripts": {
     "build": "next build --turbopack",
-    "dev": "cross-env PORT=4000 next dev --turbopack",
+    "dev": "next dev --turbopack",
     "format": "biome check --write .",
     "lint": "eslint",
-    "start": "cross-env PORT=4000 next start"
+    "start": "next start"
   },
   "type": "module",
   "version": "0.1.0"
