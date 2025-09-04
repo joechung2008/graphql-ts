@@ -6,7 +6,7 @@
   },
   "license": "MIT",
   "name": "graphql-ts",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "private": true,
   "scripts": {
     "build": "turbo run build",

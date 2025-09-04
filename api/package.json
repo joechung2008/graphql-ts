@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
-    "@types/node": "^20.19.11",
+    "@types/node": "^22.18.0",
     "esbuild": "^0.25.9",
     "esbuild-node-externals": "^1.18.0",
     "ts-node": "^10.9.2",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@graphql-ts/api",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "node build.mjs",
     "format": "biome check --write .",
