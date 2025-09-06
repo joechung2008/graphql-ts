@@ -4,6 +4,12 @@
     "@heroui/react": "^2.8.3",
     "next": "^15.5.2"
   },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.3",
+    "@types/node": "^22.18.0",
+    "eslint": "^9.35.0",
+    "turbo": "^2.5.6"
+  },
   "license": "MIT",
   "name": "graphql-ts",
   "packageManager": "pnpm@10.15.1",
@@ -21,9 +27,5 @@
     "app",
     "cli",
     "lib"
-  ],
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.2",
-    "turbo": "^2.5.6"
-  }
+  ]
 }
