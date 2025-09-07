@@ -14,8 +14,6 @@ export function QueryResponse({ response }: QueryResponseProps) {
 			defaultLanguage="json"
 			height="100%"
 			language="json"
-			theme="vs-dark"
-			value={response}
 			options={{
 				automaticLayout: true,
 				fontSize: 16,
@@ -24,6 +22,8 @@ export function QueryResponse({ response }: QueryResponseProps) {
 				scrollBeyondLastLine: false,
 				wordWrap: "on",
 			}}
+			theme="vs-dark"
+			value={response}
 		/>
 	);
 }

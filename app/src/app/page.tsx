@@ -47,10 +47,10 @@ export default function Home() {
 				</NavbarContent>
 			</Navbar>
 			<div className="flex flex-row gap-2 h-[100%] items-start">
-				<div className="flex-1 h-full">
+				<div className="flex-1 h-full min-w-0">
 					<QueryEditor value={query} onChange={setQuery} />
 				</div>
-				<div className="flex-1 h-full overflow-auto">
+				<div className="flex-1 h-full min-w-0">
 					<QueryResponse response={response} />
 				</div>
 			</div>
