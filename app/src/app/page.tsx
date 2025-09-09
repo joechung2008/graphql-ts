@@ -35,11 +35,15 @@ export default function Home() {
 	return (
 		<div className="box-border flex flex-col h-screen p-4">
 			<Navbar className="pb-2" position="static">
-				<NavbarContent className="flex w-full justify-between items-center">
+				<NavbarContent
+					as="div"
+					className="flex w-full justify-between items-center"
+					role="toolbar"
+				>
 					<NavbarBrand>
 						<GraphQlIcon className="w-24 h-8" aria-label="GraphQL logo" />
 					</NavbarBrand>
-					<NavbarItem className="flex">
+					<NavbarItem as="div" className="flex" role="group">
 						<Button aria-label="Run Query" onPress={handleRunQuery}>
 							<PlayIcon className="cursor-pointer h-6 w-6" />
 						</Button>
