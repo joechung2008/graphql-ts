@@ -2,6 +2,9 @@
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
@@ -19,5 +22,6 @@
 	},
 	"[markdown]": {
 		"editor.defaultFormatter": "biomejs.biome"
-	}
+	},
+	"biome.suggestInstallingGlobally": false
 }
