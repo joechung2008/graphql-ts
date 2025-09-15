@@ -102,7 +102,3 @@ This repo contains lightweight tests and fixtures. Run the workspace test runner
 ```bash
 pnpm -w run test
 ```
-
-## License
-
-MIT
