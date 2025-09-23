@@ -10,7 +10,6 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@graphql-ts/lib",
-  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "tsup",
     "format": "biome check --write .",

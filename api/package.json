@@ -17,7 +17,6 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@graphql-ts/api",
-  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "node build.mjs",
     "format": "biome check --write .",
