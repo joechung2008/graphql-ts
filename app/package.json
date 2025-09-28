@@ -4,7 +4,7 @@
     "@graphql-ts/lib": "workspace:*",
     "@heroicons/react": "^2.2.0",
     "@monaco-editor/react": "^4.7.0",
-    "framer-motion": "^12.23.12",
+    "framer-motion": "^12.23.22",
     "graphql-http": "^1.22.4",
     "react": "19.1.1",
     "react-dom": "19.1.1"
@@ -12,12 +12,12 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.1.13",
-    "@types/react": "^19.1.13",
+    "@types/react": "^19.1.14",
     "@types/react-dom": "^19.1.9",
     "cross-env": "^10.0.0",
     "eslint-config-next": "15.5.3",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "jiti": "^2.5.1",
+    "jiti": "^2.6.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "typescript": "^5"
