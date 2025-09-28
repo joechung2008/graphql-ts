@@ -27,7 +27,6 @@ pnpm install
 Run the Next.js app (development):
 
 ```bash
-cd app
 pnpm --filter app dev
 ```
 
@@ -86,19 +85,4 @@ cli/
 ```bash
 pnpm run format
 pnpm run lint
-```
-
-Or run the root workspace targets:
-
-```bash
-pnpm -w run format
-pnpm -w run lint
-```
-
-## Tests
-
-This repo contains lightweight tests and fixtures. Run the workspace test runner from the root:
-
-```bash
-pnpm -w run test
 ```
