@@ -12,7 +12,7 @@
     "esbuild": "^0.25.10",
     "esbuild-node-externals": "^1.18.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "license": "MIT",
   "main": "./dist/index.js",

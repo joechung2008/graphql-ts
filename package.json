@@ -1,13 +1,13 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@heroui/react": "^2.8.4",
-    "next": "^15.5.4"
+    "@heroui/react": "^2.8.5",
+    "next": "^15.5.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.4",
-    "@types/node": "^24.6.0",
-    "eslint": "^9.36.0",
+    "@biomejs/biome": "^2.2.6",
+    "@types/node": "^24.7.2",
+    "eslint": "^9.37.0",
     "turbo": "^2.5.8"
   },
   "license": "MIT",
